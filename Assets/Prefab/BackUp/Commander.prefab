@@ -535,7 +535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthDecrease: {fileID: 1617283231290920325}
   Orange: {fileID: 6116007890809416615, guid: 5f78b5e7528ab24459288a114d0efbaf, type: 3}
-  OrangeDrop: {fileID: 9135323818529040333, guid: 826786c6b10db1346bef2e4bbb56f972, type: 3}
+  OrangeDrop: {fileID: 1663290047546631418}
 --- !u!1001 &6396294588853509966
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -265,6 +265,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &628226397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1378165096577725642, guid: 409139ae5d7ca004f9035fc4f805007c, type: 3}
+  m_PrefabInstance: {fileID: 6965181172048626635}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &710300008
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +328,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1451075950 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3122103287813654554, guid: 826786c6b10db1346bef2e4bbb56f972, type: 3}
+  m_PrefabInstance: {fileID: 651254525950640794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1894398853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7750162187895776010, guid: 2c51b5926d87d43458e94c3c01fb5d93, type: 3}
+  m_PrefabInstance: {fileID: 4251433268998975462}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2120364481
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,6 +460,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2572241465636923493, guid: 2c51b5926d87d43458e94c3c01fb5d93, type: 3}
+      propertyPath: spawnpoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750162187895776009, guid: 2c51b5926d87d43458e94c3c01fb5d93, type: 3}
+      propertyPath: objectHealth
+      value: 
+      objectReference: {fileID: 1894398853}
+    - target: {fileID: 7750162187895776011, guid: 2c51b5926d87d43458e94c3c01fb5d93, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8924253758435279712, guid: 2c51b5926d87d43458e94c3c01fb5d93, type: 3}
       propertyPath: m_Name
       value: Archer
@@ -559,6 +586,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1378165096577725641, guid: 409139ae5d7ca004f9035fc4f805007c, type: 3}
+      propertyPath: objectHealth
+      value: 
+      objectReference: {fileID: 628226397}
+    - target: {fileID: 8563865003642271477, guid: 409139ae5d7ca004f9035fc4f805007c, type: 3}
+      propertyPath: spawnpoint
+      value: 
+      objectReference: {fileID: 1451075950}
     - target: {fileID: 8627905277317881738, guid: 409139ae5d7ca004f9035fc4f805007c, type: 3}
       propertyPath: m_RootOrder
       value: 6

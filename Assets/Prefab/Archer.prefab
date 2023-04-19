@@ -339,6 +339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 7750162187895776009}
   YourCharacter: {fileID: 4672890928600271030, guid: ab50a25ca73a3c141b40a8c9204a3002, type: 3}
+  spawnpoint: {fileID: 0}
   SpawnPosition: {fileID: 9135323818529040333, guid: 826786c6b10db1346bef2e4bbb56f972, type: 3}
   ArcherH: 3
   CommanderH: 3.5
