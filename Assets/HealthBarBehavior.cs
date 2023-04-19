@@ -15,6 +15,9 @@ public class HealthBarBehavior : MonoBehaviour
     loacalScale.x = currenthealth;
     transform.localScale = loacalScale;
     //Debug.Log(currenthealth);
+    if(currenthealth<=0){
+     Destroy(gameObject);
+    }
    }
    public void Health(float health){
         currenthealth = health;
