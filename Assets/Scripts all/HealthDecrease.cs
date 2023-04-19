@@ -8,6 +8,8 @@ public class HealthDecrease : MonoBehaviour
     // Start is called before the first frame update
     //public HealthBar healthBar;
     public HealthBarBehavior healthBar;
+   [SerializeField] private GameObject YourCharacter;
+   [SerializeField] private Transform SpawnPosition;
     public float ArcherH = 3f;
     public float CommanderH = 3.5f;
     public float AmountOfHealth;
@@ -56,7 +58,7 @@ public class HealthDecrease : MonoBehaviour
             healthBar.Health(AmountOfHealth);
          }
          else if (collision.tag == "Catk3"){
-            AmountOfHealth-=0.50f;
+            AmountOfHealth-=5.50f;
             DeadChecker(AmountOfHealth);
             Debug.Log("-50 "+ AmountOfHealth);
             healthBar.Health(AmountOfHealth);
@@ -80,7 +82,7 @@ public class HealthDecrease : MonoBehaviour
             healthBar.Health(AmountOfHealth);
          }
          else if (collision.tag == "Aarrow"){
-            AmountOfHealth-=0.70f;
+            AmountOfHealth-=7.700f;
             DeadChecker(AmountOfHealth);
             Debug.Log("-70 "+ AmountOfHealth);
             healthBar.Health(AmountOfHealth);
@@ -97,6 +99,9 @@ public class HealthDecrease : MonoBehaviour
     public void Destroy(){
       if (die==true){
          Destroy(gameObject);
+         Instantiate(YourCharacter,SpawnPosition.position,transform.rotation);
+         die = false;
+         Debug.Log(die);
       }
     }
 }
