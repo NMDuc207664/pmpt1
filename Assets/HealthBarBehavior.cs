@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HealthBarBehavior : MonoBehaviour
 {
     public float currenthealth;
-   Vector3 loacalScale;
+   Vector2 loacalScale;
    private HealthDecrease healthDecrease;
    void Start(){
     loacalScale = transform.localScale;

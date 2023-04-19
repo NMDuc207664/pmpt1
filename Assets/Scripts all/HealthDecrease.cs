@@ -9,6 +9,7 @@ public class HealthDecrease : MonoBehaviour
     //public HealthBar healthBar;
     public HealthBarBehavior healthBar;
    [SerializeField] private GameObject YourCharacter;
+   //[SerializeField] private GameObject spawnpoint;
    [SerializeField] private Transform SpawnPosition;
     public float ArcherH = 3f;
     public float CommanderH = 3.5f;
@@ -94,14 +95,33 @@ public class HealthDecrease : MonoBehaviour
         {
             die = true;
             anim.SetTrigger("die");
+            Debug.Log(die);
         }
     }
-    public void Destroy(){
-      if (die==true){
-         Destroy(gameObject);
-         Instantiate(YourCharacter,SpawnPosition.position,transform.rotation);
-         die = false;
-         Debug.Log(die);
-      }
+    public void Destroy()
+    {
+        if (die == true)
+        {
+            // if (collision.CompareTag("Archer"))
+            // {
+            //     die = false;
+            //     anim.SetTrigger("revive");
+            //     AmountOfHealth = 3.0f;
+            //     YourCharacter.transform.position = spawnpoint.transform.position;
+            //     Debug.Log(die);
+            // }
+            // else if (collision.CompareTag("Commander"))
+            // {
+            //     die = false;
+            //     anim.SetTrigger("revive");
+            //     AmountOfHealth = 3.5f;
+            //     YourCharacter.transform.position = spawnpoint.transform.position;
+            //     Debug.Log(die);
+            // }
+            die = false;
+            Destroy(gameObject);
+            Instantiate(YourCharacter,SpawnPosition.position,transform.rotation);
+            Debug.Log(die);
+        }
     }
 }
