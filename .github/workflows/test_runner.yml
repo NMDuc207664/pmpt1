@@ -36,7 +36,7 @@ jobs:
       - uses: game-ci/unity-test-runner@v2
         id: tests
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_LICENSE: ${{ secrets.UNITY_SENGOKU_SHOWDOWN }}
         with:
           projectPath: ${{ matrix.projectPath }}
           testMode: ${{ matrix.testMode }}
